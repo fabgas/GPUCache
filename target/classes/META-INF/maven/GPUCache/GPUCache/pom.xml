@@ -1,0 +1,82 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>GPUCache</groupId>
+  <artifactId>GPUCache</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <build>
+    <sourceDirectory>src</sourceDirectory>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.7.0</version>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  <dependencies>
+    <dependency>
+    <groupId>org.jcuda</groupId>
+    <artifactId>jcuda</artifactId>
+    <version>0.8.0</version>
+</dependency>
+<dependency>
+    <groupId>org.jcuda</groupId>
+    <artifactId>jcublas</artifactId>
+    <version>0.8.0</version>
+</dependency>
+<dependency>
+    <groupId>org.jcuda</groupId>
+    <artifactId>jcufft</artifactId>
+    <version>0.8.0</version>
+</dependency>
+<dependency>
+    <groupId>org.jcuda</groupId>
+    <artifactId>jcusparse</artifactId>
+    <version>0.8.0</version>
+</dependency>
+<dependency>
+    <groupId>org.jcuda</groupId>
+    <artifactId>jcusolver</artifactId>
+    <version>0.8.0</version>
+</dependency>
+<dependency>
+    <groupId>org.jcuda</groupId>
+    <artifactId>jcurand</artifactId>
+    <version>0.8.0</version>
+</dependency>
+<dependency>
+    <groupId>org.jcuda</groupId>
+    <artifactId>jnvgraph</artifactId>
+    <version>0.8.0</version>
+</dependency>
+<dependency>
+    <groupId>org.jcuda</groupId>
+    <artifactId>jcudnn</artifactId>
+    <version>0.8.0</version>
+</dependency>
+
+  	<dependency>
+  		<groupId>org.apache.arrow</groupId>
+  		<artifactId>arrow-memory</artifactId>
+  		<version>0.7.1</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.apache.arrow</groupId>
+  		<artifactId>arrow-vector</artifactId>
+  		<version>0.7.1</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.apache.arrow</groupId>
+  		<artifactId>arrow-format</artifactId>
+  		<version>0.7.1</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.apache.arrow</groupId>
+  		<artifactId>arrow-tools</artifactId>
+  		<version>0.7.1</version>
+  	</dependency>
+  </dependencies>
+</project>
